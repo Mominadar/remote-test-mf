@@ -73,7 +73,7 @@ function App() {
     setIsLoading(true);
 
     const parsedHash = queryString.parse(location.hash);
-    const backendUrl = parsedHash["/att?baseUrl"]
+    const backendUrl = parsedHash["/att/?baseUrl"]
     let baseUrl = backendUrl + "/" || "https://a2dd-104-197-182-75.ngrok.io/";
     data = {
       text: selectedText,
