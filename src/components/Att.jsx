@@ -7,6 +7,7 @@ import Select from "react-select";
 import Birds from "./../assets/birds.jpeg";
 import Egg from "./../assets/egg.jpeg";
 import Reptiles from "./../assets/reptiles.jpeg";
+import queryString from 'query-string';
 
 function formatTextWithLineBreaks(text) {
   return text.split("\\n").map((line, index) => (
@@ -71,11 +72,8 @@ function App() {
     };
     setIsLoading(true);
 
-    console.log("hhhh", window.location);
-
-    const params = new URLSearchParams(window.location.search);
-    const backendUrl = params.get("baseUrl");
-
+    const parsedHash = queryString.parse(location.hash);
+    const backendUrl = parsedHash["/att?baseUrl"]
     let baseUrl = backendUrl + "/" || "https://a2dd-104-197-182-75.ngrok.io/";
     data = {
       text: selectedText,
