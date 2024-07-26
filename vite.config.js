@@ -10,12 +10,17 @@ export default defineConfig({
       name: "remote_app",
       filename: "remoteEntry.js",
       exposes: {
-        './Button': './src/components/Button'
+        './Button': './src/components/Button',
+         './Att': './src/components/Att'
       },
       shared: ['react','react-dom']
     })
   ],
+  base:"http://localhost:5001",
   build: {
+    rollupOptions: {
+      external:[],
+    },
     modulePreload: false,
     target: 'esnext',
     minify: false,

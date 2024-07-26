@@ -1,0 +1,164 @@
+.App {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  .book-container {
+    width: 50%;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 1000px; /* Adjust this value based on your layout */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  
+  .book-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .book-container p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .highlight {
+    background-color: #ffcc80; /* Choose a color that suits your design */
+  }
+  .book-image {
+    max-width: 100%; /* makes image responsive */
+    height: auto; /* maintain aspect ratio */
+    width: auto; /* maintain aspect ratio */
+    max-height: 300px; /* example fixed max-height */
+    display: block; /* images are inline by default, change to block to allow margin auto to work */
+    margin: 20px auto; /* top and bottom margin is 20px, left and right is auto to center */
+  }
+  
+  .actions-container {
+    width: 50%;
+    margin:auto;
+    padding:10%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .translate-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    width: 100%; /* Use the full width of the container */
+  }
+  
+  .translate-container > * {
+    flex-basis: 48%; /* Assign width to children, leaving some space for margins */
+    margin: 1%; /* Add a little margin around items */
+  }
+  
+  /* If you are using react-select, you may need to adjust its width specifically */
+  .translate-container .Select {
+    width: 100%; /* Ensure react-select fills its container */
+  }
+  
+  .info-container {
+    background-color: #f5f5f5; /* Light grey background */
+    border: 1px solid #ddd; /* Border for the container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    margin-bottom: 20px; /* Space below the container */
+  }
+  
+  .info-text {
+    margin-bottom: 10px; /* Space between paragraphs */
+    line-height: 1.6; /* Adjust line height for readability */
+  }
+  
+  .info-text a {
+    color: #0645ad; /* Color for links */
+    text-decoration: none; /* No underline for links */
+  }
+  
+  .info-text a:hover {
+    text-decoration: underline; /* Underline on hover for better usability */
+  }
+  
+  .action-instruction {
+    font-weight: bold; /* Make the instruction bold */
+    margin-top: 10px; /* Space above the instruction */
+  }
+  
+  .api-response-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    height:200px;
+    max-height: 300px;
+    overflow-y: auto; /* Vertical scrolling if needed */
+    overflow-x: auto; /* Hide horizontal scrollbar */
+    white-space: pre-wrap;
+    overflow-wrap: break-word; /* Break long words to avoid horizontal overflow */
+    /* Ensure the container width is properly set, either by a fixed width or by its parent */
+  }
+  
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .speech-btn {
+    /* Example styles */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .speech-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .speech-control-btn {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .speech-control-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Further style each section and button as per the design */
+  /* Add responsive design if necessary */
+  
+  body {
+    margin: 0;
+    font-family: 'Noto Sans';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
