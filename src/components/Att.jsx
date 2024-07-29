@@ -4,9 +4,9 @@ import "./index.css";
 import Speech from "react-speech";
 import LANGUAGES from "./languages";
 import Select from "react-select";
-import Birds from "./../assets/birds.jpeg";
-import Egg from "./../assets/egg.jpeg";
-import Reptiles from "./../assets/reptiles.jpeg";
+import Birds from "../assets/birds.jpeg";
+import Egg from "../assets/egg.jpeg";
+import Reptiles from "../assets/reptiles.jpeg";
 import queryString from 'query-string';
 
 function formatTextWithLineBreaks(text) {
